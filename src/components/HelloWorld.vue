@@ -1,11 +1,14 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h3>{{ count }}</h3>
     <button @click="add">+</button>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -16,6 +19,15 @@ export default {
 
     }
   },
+//  computed: {
+//    count() {
+//      return this.$store.state.num;
+//    }
+//  },
+  computed: mapState({
+      count: state => state.num,
+      countAlias: 'count',
+  }),
   methods: {
       add() {
           this.$store.commit('increment');
