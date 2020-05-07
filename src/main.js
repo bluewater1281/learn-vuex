@@ -23,6 +23,17 @@ export const store = new Vuex.Store({
             state.count++,
                 state.num++
         }
+    },
+    getters: {
+        doneTodos: (state) => {
+            return state.todos.filter(todo => todo.done);
+        },
+        doneTodosCount: (state,getters) => {
+            return getters.doneTodos.length;
+        },
+        getTodoById: (state) => (id) => {
+            return state.todos.filter(todo => todo.id = id);
+        }
     }
 })
 //store.commit('increment');

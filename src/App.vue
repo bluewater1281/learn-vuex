@@ -6,16 +6,25 @@
         <MapState />
         <MState />
         <MSOperator />
+        <!--getter-->
+        <FilterState />
+        <MapGetter/>
+        <MapGetter1/>
     </div>
 </template>
 
 <script>
+    /*state*/
     import HelloWorld from './components/state/HelloWorld.vue'
     import StateExa from './components/state/StateExa.vue';
     import Counter from './components/state/Counter.vue';
     import MapState from './components/state/MapState.vue';
     import MState from './components/state/MState.vue';
     import MSOperator from './components/state/MSOperator.vue';
+    /*getter*/
+    import FilterState from './components/getter/FilterState.vue';
+    import MapGetter from './components/getter/MapGetter.vue';
+    import MapGetter1 from './components/getter/MapGetter1.vue';
 
     export default {
         name: 'App',
@@ -25,7 +34,11 @@
             Counter,
             MapState,
             MState,
-            MSOperator
+            MSOperator,
+            //getter
+            FilterState,
+            MapGetter,
+            MapGetter1,
         }
     }
 </script>
