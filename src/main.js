@@ -25,24 +25,11 @@ export const store = new Vuex.Store({
         }
     }
 })
-const Counter = {
-    template: `<div>{{ count }}</div>`,
-    computed: {
-        count() {
-            //return this.$store.state.count;
-        }
-    }
-}
-
 //store.commit('increment');
 
 Vue.config.productionTip = false
 
 new Vue({
     store,
-    components: {
-        Counter
-    },
-    template: `<div><counter></counter></div>`,
     render: h => h(App),
 }).$mount('#app')

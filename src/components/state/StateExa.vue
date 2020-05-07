@@ -6,7 +6,7 @@
 </template>
 
 <script>
-    import { store } from './../main';
+    import { store } from './../../main';
     export default {
         name: 'StateExa',
         computed: {

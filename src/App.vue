@@ -10,12 +10,12 @@
 </template>
 
 <script>
-    import HelloWorld from './components/HelloWorld.vue'
-    import StateExa from './components/StateExa.vue';
-    import Counter from './components/Counter.vue';
-    import MapState from './components/MapState.vue';
-    import MState from './components/MState.vue';
-    import MSOperator from './components/MSOperator.vue';
+    import HelloWorld from './components/state/HelloWorld.vue'
+    import StateExa from './components/state/StateExa.vue';
+    import Counter from './components/state/Counter.vue';
+    import MapState from './components/state/MapState.vue';
+    import MState from './components/state/MState.vue';
+    import MSOperator from './components/state/MSOperator.vue';
 
     export default {
         name: 'App',
