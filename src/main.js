@@ -19,9 +19,9 @@ export const store = new Vuex.Store({
         ]
     },
     mutations: {
-        increment(state) {
-            state.count++,
-                state.num++
+        increment(state,payLoad) {
+            state.count += payLoad.amount;
+            state.num++;
         }
     },
     getters: {
@@ -36,7 +36,13 @@ export const store = new Vuex.Store({
         }
     }
 })
-//store.commit('increment');
+store.commit('increment',{
+    amount: 10
+});
+store.commit({
+    type: 'increment',
+    amount: 10
+})
 
 Vue.config.productionTip = false
 
