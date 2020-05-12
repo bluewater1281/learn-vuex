@@ -8,6 +8,8 @@
         <button @click="addEvent">+</button>
         <button @click="decEvent">-</button>
         <button @click="add">+100</button>
+
+        <button @click="dispatchEvent">dispatch</button>
     </div>
 </template>
 
@@ -71,6 +73,9 @@
             add() {
                 this.$store.commit('someMutation');
             },
+            dispatchEvent() {
+                this.$store.dispatch('dispatchAction');
+            }
         }
     }
 </script>

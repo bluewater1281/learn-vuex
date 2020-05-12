@@ -22,6 +22,14 @@ export const store = new Vuex.Store({
             setTimeout(()=>{
                 state.count +=100;
             },1000)
+        },
+        dispatchAction(state) {
+            state.count +=100;
+        }
+    },
+    actions: {
+        dispatchAction(context) {
+            context.commit('dispatchAction');
         }
     }
 })
