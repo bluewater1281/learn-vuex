@@ -6,12 +6,12 @@
 </template>
 
 <script>
-    import { store } from './../../main';
+    import { store1 } from './../../main';
     export default {
         name: 'StateExa',
         computed: {
             count() {
-                return store.state.count;
+                return store1.state.count;
             }
         }
     }

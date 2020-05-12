@@ -1,10 +1,12 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
+//import Vuex from 'vuex';
 import App from './App.vue';
-Vue.use(Vuex);
 
+import { store } from './store';
+console.log('store',store);
 
-export const store = new Vuex.Store({
+/*
+export const store1 = new Vuex.Store({
     state: {
         count: 123,
         localCount: 2,
@@ -36,6 +38,8 @@ export const store = new Vuex.Store({
         }
     }
 })
+
+
 store.commit('increment',{
     amount: 10
 });
@@ -43,8 +47,10 @@ store.commit({
     type: 'increment',
     amount: 10
 })
+ */
 
 Vue.config.productionTip = false
+//store.commit('SOME_MUTATION',10);
 
 new Vue({
     store,
