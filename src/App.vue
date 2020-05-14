@@ -10,6 +10,10 @@
         <!--<FilterState />-->
         <!--<MapGetter/>-->
         <!--<MapGetter1/>-->
+
+        <DispatchAction/>
+        <DistributeAction/>
+        <DispatchActionA/>
     </div>
 </template>
 
@@ -26,6 +30,11 @@
 //    import MapGetter from './components/getter/MapGetter.vue';
 //    import MapGetter1 from './components/getter/MapGetter1.vue';
 
+    /*action*/
+    import DispatchAction from './components/action/DispatchAction.vue';
+    import DistributeAction from './components/action/DistributeAction.vue';
+    import DispatchActionA from './components/action/DispatchActionA.vue';
+
     export default {
         name: 'App',
         components: {
@@ -39,6 +48,10 @@
 //            FilterState,
 //            MapGetter,
 //            MapGetter1,
+            //action
+            DispatchAction,
+            DistributeAction,
+            DispatchActionA,
         }
     }
 </script>

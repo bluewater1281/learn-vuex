@@ -3,7 +3,7 @@ import Vue from 'vue';
 import App from './App.vue';
 
 import { store } from './store';
-console.log('store',store);
+//console.log('store',store);
 
 /*
 export const store1 = new Vuex.Store({
